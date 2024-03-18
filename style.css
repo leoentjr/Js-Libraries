@@ -1,0 +1,268 @@
+@media (max-width: 768px) {
+    body {
+        font-size: 14px;
+    }
+
+    header, footer {
+        flex-direction: column; /* Stack items vertically on smaller screens */
+        text-align: center; /* Center-align the text */
+    }
+
+    .canvas-interactive-wrapper .cta-wrapper {
+        margin-top: 10px; /* Increase vertical margin, remove horizontal margin */
+    }
+    .mobile-nav {
+        display: block;
+        position: fixed;
+        top: 0;
+        width: 100%;
+        background: #333;
+        text-align: center;
+    }
+    .mobile-nav a {
+        display: block;
+        padding: 10px;
+        color: white;
+        text-decoration: none;
+    }
+    
+    main {
+        width: 95vw; /* Adjust main width for smaller screens */
+        padding: 20px; /* Adjust padding */
+    }
+    #socials a {
+        font-size: 20px; /* Adjust social icon sizes for better visibility */
+    }
+
+    footer section {
+        margin: 10px 0; /* Add space between footer sections */
+    }
+}
+
+
+.bloc-logo {
+    align-self: flex-start;
+    position: relative;
+    width: 130px;
+    height: 49px;
+
+}
+
+.bloc-logo canvas,
+.bloc-logo .logo-mask {
+    display: block;
+    width: 130px;
+    height: 49px;
+}
+
+.bloc-logo .logo-mask {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-size: 130px;
+    background-image: url("/images/logo-mask.png");
+    text-indent: -9999px;
+}
+
+#video-container {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+}
+
+#video-container video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* This ensures the video covers the whole area without being stretched */
+}
+
+.video-overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #FFF; /* Adjust the color based on your video's colors */
+    text-align: center;
+    font-size: 50px;
+}
+
+#bgvideo {
+    width: 100%; /* Ensure the video covers the container */
+    height: 100%;
+    object-fit: cover; /* This will cover the whole screen, cropping the video if necessary */
+    z-index: -1; /* Send the video to the back */
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif; /* Add a default font */
+}
+
+header {
+    background-color: rgba(255, 255, 255, 0.9); /* Light background for better visibility */
+    display: flex;
+    justify-content: space-between; /* Adjusts the space distribution */
+    align-items: center;
+    width: 100%;
+    padding: 10px 0; /* Add some padding */
+} 
+
+#furniture-images {
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+
+.canvas-interactive-wrapper {
+    position: relative;
+    height: 300px;
+    text-align: center;
+    width: 100%;
+}
+
+.canvas-interactive-wrapper canvas {
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+
+.canvas-interactive-wrapper .cta-wrapper {
+    margin-top: 130px;
+}
+
+.canvas-interactive-wrapper .cta-wrapper a {
+    position: relative;
+    display: inline-block;
+    padding: 3px 7px;
+    border: solid 1px transparent;
+    margin-right: 50px;
+    z-index: 1;
+    text-decoration: none;
+    color: #222;
+    transition: border .3s;
+}
+
+.canvas-interactive-wrapper .cta-wrapper a.active {
+    border-color: #222;
+}
+
+.canvas-interactive-wrapper .cta-wrapper a:hover {
+
+    border-color: #444; /* Darker border for hover */
+}
+
+main {
+    width: 80vw;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centers the main content */
+}
+
+
+main section a {
+    margin: 10px; /* Add space around each link */
+    display: inline-block; /* Ensure links behave as block elements */
+}
+
+main section img {
+    width: 100%; /* Ensure images are responsive */
+    max-width: 250px; /* Limit image size */
+    border-radius: 5px; /* Add rounded corners to images */
+}
+
+#testimonials {
+    text-align: center;
+    padding: 20px;
+
+}
+
+.testimonial p {
+    font-style: italic;   
+    font-weight: bold;
+}
+.testimonial cite {
+    display: block;
+    margin-top: 10px;
+}
+
+
+
+/* FOOTER */
+footer {
+    position: relative;
+    width: 50%;
+    height: 5vh;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    justify-content: center;
+    border-radius: 20px;
+    
+}
+
+#canvas-image-blending {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%; /* Full width of the footer */
+    height: 100%; /* Full height of the footer */
+    z-index: -1; /* Positions the canvas behind the content */
+}
+
+footer section {
+    margin: 0 20px; /* Add space between sections */
+}
+
+#socials a {
+    display: inline-block;
+    margin-right: 10px; /* Space between icons */
+    /* Add styles for social media icons */
+    color: #333; /* Social Media Icon Color  */
+    font-size: 24px;
+}
+
+#socials a:hover {
+    color: #007bff; /* Icon hover color */
+}
+
+#contact form {
+    max-width: 500px;
+    width: 100%;
+}
+
+#contact input, #contact textarea {
+    width: 100%; /* Full width */
+    padding: 10px;
+    margin: 5px 0; /* Space between fields */
+    border: 1px solid #ccc; /* Subtle border */
+    border-radius: 4px; /* Rounded corners */
+}
+
+#contact form {
+    display: flex;
+    flex-direction: column;
+    max-width: 500px;
+    margin: auto;
+}
+#contact form input, #contact form textarea {
+    margin: 10px 0;
+    padding: 10px;
+}
+.footer-notice {
+    text-align: center;
+    padding: 10px;
+    font-size: 0.
+}

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@3.0.0/reset.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="/css/lightbox.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap" rel="stylesheet">
+    <title>Furniture Store</title>
+</head>
+
+<body>
+    <body>
+    <div id="video-container">
+            <video autoplay muted loop id="bgvideo">
+              <source src="/Video/night.mp4" type="video/mp4">
+            </video>
+  
+        <div class="video-overlay">
+            <h3>WE ARE ON SALE!</h3>
+            <h4>WE SHIP WORLDWIDE!</h4>
+        </div>
+    </div>  
+        <p>SCROLL DOWN!</p>
+    <header>
+        <div class="canvas-interactive-wrapper">
+            <canvas id="canvas-interactive"></canvas>
+            <div class="cta-wrapper">
+                <a href="#default-state" id="default-state-cta" class="active">Furnitures</a>
+                <a href="#violet-state" id="violet-state-cta">About</a>
+                <a href="#orange-state" id="orange-state-cta">Contacts</a>
+            </div>
+        </div>
+    </header>
+
+    <main id="home">
+        <div class="bloc-logo">
+            <canvas id="logo-canvas"></canvas>
+            <a href="index.html" class="logo-mask">Furnitures</a>
+        </div>
+        <section id="furniture-images"> 
+            <!-- Furniture items will go here -->
+            <a href="/images/jokunaoak.jpg" class="example-image0-link" data-lightbox="example-set" data-title="Click the right half of the image to move forward."><img src="/images/jokunaoak.jpg" alt="Furniture 1"></a>
+            <a href="/images/magstand.jpg" class="example-image0-link" data-lightbox="example-set" data-title="Or press the right arrow on your keyboard."><img src="/images/magstand.jpg" alt="Furniture 2"></a>
+            <a href="/images/mediaconsole.jpg" class="example-image0-link" data-lightbox="example-set" data-title="The next image in the set is preloaded as you're viewing."><img src="/images/mediaconsole.jpg" alt="Furniture 3"></a>
+            <a href="/images/morgen.jpg" class="example-image0-link" data-lightbox="example-set" data-title="Click anywhere outside the image or the X to the right to close."><img src="/images/morgen.jpg" alt="Furniture 4"></a>
+        </section>
+        
+        <section id="testimonials">
+            <h2>Customer Reviews</h2><br>
+            <div class="testimonial">
+                <p>"Great quality furniture and fantastic customer service."</p>
+                <cite>- Jane Doe</cite>
+            </div>
+            <!-- Add more testimonials here -->
+        </section>
+        <section id="contact">
+            <h2>Contact Us</h2>
+            <form id="contact-form">
+                <input type="text" id="name" name="name" placeholder="Your Name" required>
+                <input type="email" id="email" name="email" placeholder="Your Email" required>
+                <textarea id="message" name="message" placeholder="Your Message" required></textarea>
+                <button type="submit">Send Message</button>
+            </form>
+        </section> 
+    </main>
+
+    <footer>
+        <canvas id="canvas-image-blending"></canvas>
+        <!-- Footer content will go here -->
+        <section id="socials">  
+            <!-- Social media links will go here -->
+        <a href="https://www.facebook.com/yourpage" target="_blank" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+        <a href="https://twitter.com/youraccount" target="_blank" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+        <a href="https://www.instagram.com/youraccount" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+        <a href="https://www.linkedin.com/in/yourprofile" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+        </section>
+    </footer>
+    <div class="footer-notice">
+        © 2024 Furniture Store. All rights reserved.
+    </div> 
+    <!-- <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script> -->
+    <script src="js/bideo.js"></script>
+    <script src="js/lightbox-plus-jquery.min.js"></script>
+    <script src="js/granim.min.js"></script>
+    <script src="main.js"></script>
+    
+</body>
+</html>
